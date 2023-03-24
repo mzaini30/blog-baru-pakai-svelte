@@ -1,9 +1,11 @@
 <script>
   import Cetak from "../fungsi/cetak.svelte";
+  import semua_tulisan from "../fungsi/semua-tulisan";
 
-  const semua_postingan = import.meta.glob("../postingan/*.mdx", {
-    eager: true,
-  });
+  const semua_postingan = semua_tulisan;
+  // const semua_postingan = import.meta.glob("../postingan/*.mdx", {
+  //   eager: true,
+  // });
   let semua_kategori = [];
   for (let x of Object.entries(semua_postingan)) {
     semua_kategori = [...semua_kategori, x[1].metadata.kategori];

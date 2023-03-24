@@ -21,6 +21,7 @@
     "five-server": "^0.1.9",
     "glob": "^9.3.1",
     "kumpulan-tools": "^1.0.0",
-    "unocss": "^0.50.6"
+    "unocss": "^0.50.6",
+    "vite-plugin-svelte-inspector": "^0.2.1"
   }
 }

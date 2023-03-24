@@ -12,6 +12,7 @@ specifiers:
   svelte: ^3.54.0
   unocss: ^0.50.6
   vite: ^4.2.0
+  vite-plugin-svelte-inspector: ^0.2.1
 
 dependencies:
   '@sveltejs/adapter-static': 2.0.1_@sveltejs+kit@1.13.0
@@ -20,6 +21,7 @@ dependencies:
   glob: 9.3.1
   kumpulan-tools: 1.0.0
   unocss: 0.50.6_vite@4.2.1
+  vite-plugin-svelte-inspector: 0.2.1_svelte@3.57.0
 
 devDependencies:
   '@sveltejs/adapter-auto': 2.0.0_@sveltejs+kit@1.13.0
@@ -2084,6 +2086,14 @@ packages:
       '@types/unist': 2.0.6
       unist-util-stringify-position: 2.0.3
     dev: true
+
+  /vite-plugin-svelte-inspector/0.2.1_svelte@3.57.0:
+    resolution: {integrity: sha512-P1aZNFf+CSwywO4CfJa7jVjpXtLbJXfSSFcIm918+/T1OwiNVlXqxPnTx4xhmeF6M709xoTBKEy/NOydlsR4iw==}
+    peerDependencies:
+      svelte: ^3.44.0
+    dependencies:
+      svelte: 3.57.0
+    dev: false
 
   /vite/4.2.1:
     resolution: {integrity: sha512-7MKhqdy0ISo4wnvwtqZkjke6XN4taqQ2TBaTccLIpOKv7Vp2h4Y+NpmWCnGDeSvvn45KxvWgGyb0MkHvY1vgbg==}

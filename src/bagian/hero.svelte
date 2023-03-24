@@ -3,10 +3,12 @@
   import { acak } from "kumpulan-tools";
   import Tablet from "./tablet.svelte";
   import gambar_default from "../fungsi/gambar-default";
+  import semua_tulisan from "../fungsi/semua-tulisan";
 
-  let semua_postingan = import.meta.glob("../postingan/*.mdx", {
-    eager: true,
-  });
+  let semua_postingan = semua_tulisan;
+  //   let semua_postingan = import.meta.glob("../postingan/*.mdx", {
+  //     eager: true,
+  //   });
   semua_postingan = Object.entries(semua_postingan);
   let postingan_terpilih = acak(semua_postingan)[0];
   let link = postingan_terpilih[0]
