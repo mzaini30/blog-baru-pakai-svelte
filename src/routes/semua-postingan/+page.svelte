@@ -1,0 +1,1 @@
+<p>Semua postingan...</p>

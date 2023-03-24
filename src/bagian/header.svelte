@@ -1,7 +1,7 @@
 <script>
   import Cetak from "../fungsi/cetak.svelte";
 
-  const semua_postingan = import.meta.glob("../routes/post/*.mdx", {
+  const semua_postingan = import.meta.glob("../postingan/*.mdx", {
     eager: true,
   });
   let semua_kategori = [];
@@ -18,7 +18,7 @@
     <a href="/">Zen Zen</a>
     <div class="flex gap-3">
       {#each semua_kategori as kategori}
-        <!-- <a href="/kategori/{kategori}">{kategori}</a> -->
+        <a href="/kategori/{kategori}">{kategori}</a>
       {/each}
     </div>
   </div>
