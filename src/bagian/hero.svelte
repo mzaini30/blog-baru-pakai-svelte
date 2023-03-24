@@ -26,13 +26,15 @@
   */
 </script>
 
-<div class="bg-green-500 w-full text-white sticky top-0 ">
-  <div class="mx-auto w-250 grid grid-cols-2">
-    <img
-      class="w-full h-auto"
-      src={nilai.gambar || gambar_default}
-      alt="Gambar {nilai.judul}"
-    />
+<div class="bg-green-500 w-full text-white ">
+  <div class="mx-auto w-270 grid grid-cols-2">
+    <a href={link}>
+      <img
+        class="w-full h-auto"
+        src={nilai.gambar || gambar_default}
+        alt="Gambar {nilai.judul}"
+      />
+    </a>
     <div class="p-5 flex items-center">
       <div class="grid grid-cols-1 gap-3">
         <Tablet link="/kategori/{nilai.kategori}" teks={nilai.kategori} />

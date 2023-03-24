@@ -14,9 +14,9 @@
 </script>
 
 <div
-  class="bg-red-500 w-full text-white p-3 sticky top-0 hover:[&_a]:text-black"
+  class="bg-red-500 w-full z-999 text-white p-3 sticky top-0 hover:[&_a]:text-black"
 >
-  <div class="mx-auto w-250 flex justify-between">
+  <div class="mx-auto w-270 flex justify-between">
     <a href="/">Zen Zen</a>
     <div class="flex gap-3">
       {#each semua_kategori as kategori}
