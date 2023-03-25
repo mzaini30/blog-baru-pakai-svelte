@@ -19,8 +19,10 @@
   "dependencies": {
     "@sveltejs/adapter-static": "^2.0.1",
     "@unocss/reset": "^0.50.6",
+    "excalibur-zen": "^0.0.3",
     "five-server": "^0.1.9",
     "glob": "^9.3.1",
+    "gravatar": "^1.8.2",
     "kumpulan-tools": "^1.0.0",
     "unocss": "^0.50.6",
     "vite-plugin-svelte-inspector": "^0.2.1"

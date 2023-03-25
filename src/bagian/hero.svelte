@@ -4,6 +4,7 @@
   import Tablet from "./tablet.svelte";
   import gambar_default from "../fungsi/gambar-default";
   import semua_tulisan from "../fungsi/semua-tulisan";
+  import olah_link from "../fungsi/olah-link";
 
   let semua_postingan = semua_tulisan;
   //   let semua_postingan = import.meta.glob("../postingan/*.mdx", {
@@ -11,9 +12,10 @@
   //   });
   semua_postingan = Object.entries(semua_postingan);
   let postingan_terpilih = acak(semua_postingan)[0];
-  let link = postingan_terpilih[0]
-    .replace("../postingan/", "/post/")
-    .replace(".mdx", "");
+  // let link = postingan_terpilih[0]
+  //   .replace("../postingan/", "/post/")
+  //   .replace(".mdx", "");
+  let link = olah_link(postingan_terpilih[0]);
   let nilai = postingan_terpilih[1].metadata;
   /* 
   {

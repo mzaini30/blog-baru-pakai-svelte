@@ -1,4 +1,4 @@
-const semua_tulisan = import.meta.glob("../postingan/*.mdx", {
+const semua_tulisan = import.meta.glob("../routes/post/*/+page.mdx", {
   eager: true,
 });
 

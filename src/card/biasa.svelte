@@ -1,9 +1,10 @@
 <script>
   import gambar_default from "../fungsi/gambar-default";
+  import olah_link from "../fungsi/olah-link";
 
   export let link, gambar, judul, kategori;
 
-  link = link.replace(".mdx", "").replace("/postingan/", "/post/");
+  link = olah_link(link);
 </script>
 
 <div class="[&>*]:mb-3 [&>*]:block last:[&>*]:mb-0">

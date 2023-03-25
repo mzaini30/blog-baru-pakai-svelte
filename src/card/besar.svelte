@@ -1,9 +1,10 @@
 <script>
   import gambar_default from "../fungsi/gambar-default";
+  import olah_link from "../fungsi/olah-link";
 
   export let link, judul, gambar;
 
-  link = link.replace(".mdx", "").replace("/postingan/", "/post/");
+  link = olah_link(link);
 </script>
 
 <a href={link} class="block relative top-0 pb-[56.25%]">

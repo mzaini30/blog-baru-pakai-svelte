@@ -1,6 +1,7 @@
 <script>
   import JudulSegmen from "./judul-segmen.svelte";
   import semua_tulisan from "../fungsi/semua-tulisan";
+  import olah_link from "../fungsi/olah-link";
 
   export let kategori;
 
@@ -23,9 +24,8 @@
   <ul class="grid grid-cols-1 gap-4 text-sm">
     {#each ambil_lima as x}
       <li>
-        <a
-          href={x[0].replace(".mdx", "").replace("/postingan/", "/post/")}
-          class="hover:text-red-700">{x[1].metadata.judul}</a
+        <a href={olah_link(x[0])} class="hover:text-red-700"
+          >{x[1].metadata.judul}</a
         >
       </li>
     {/each}
